@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# DayZ build/output
+*.pbo
+*.bisign
+*.bikey
+*.log
+*.rpt
+*.adm
+*.mdmp
+
+# Windows
+Thumbs.db
+desktop.ini
