@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DayZ Kits & Points - Complete Public Steam + Discord Edition v1.6.2
 
 This is the complete public package.
@@ -436,3 +437,11 @@ Email
 ```
 
 Username is validated and must be unique.
+=======
+# DayZ-Kits-Points-System
+# DayZ Kits & Points System
+
+Standalone DayZ kit and points system with Python website, Steam/Discord linking, API, workers, and optional Discord bot.
+
+Then click:
+>>>>>>> ac63974c930750091fccc49dec14276ef0d851d4
