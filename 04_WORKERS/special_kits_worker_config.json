@@ -1,0 +1,8 @@
+{
+  "website_base_url": "http://127.0.0.1:8080",
+  "api_secret": "CHANGE_THIS_API_SECRET",
+  "poll_seconds": 10,
+  "servers": {
+    "server1": "C:/Path/To/Your/Server/profiles/DayZKitsPoints/DiscordQueue.json"
+  }
+}

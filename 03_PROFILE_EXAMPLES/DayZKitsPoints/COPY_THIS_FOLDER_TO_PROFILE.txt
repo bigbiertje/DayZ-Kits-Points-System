@@ -1,0 +1,20 @@
+COPY THIS FOLDER TO EACH SERVER PROFILE
+======================================
+
+Copy the whole DayZKitsPoints folder to every server profile folder.
+
+Examples:
+
+C:/Program Files (x86)/CFTools Software GmbH/Architect/Agent/deployments/Server1/profiles/DayZKitsPoints
+C:/Program Files (x86)/CFTools Software GmbH/Architect/Agent/deployments/Server2/profiles/DayZKitsPoints
+C:/Program Files (x86)/CFTools Software GmbH/Architect/Agent/deployments/Server3/profiles/DayZKitsPoints
+
+Then edit PointsConfig.json on each server:
+
+Server 1:      "ServerKey": "server1"
+Server 2:    "ServerKey": "server2"
+Server 3: "ServerKey": "server3"
+
+KitConfig.json controls free kits and special_ point kits.
+DiscordQueue.json is used by the worker to deliver website-bought kits.
+PointEvents.json is used by the worker to send zombie-kill points to the website.

@@ -1,0 +1,4 @@
+Python syntax check:
+OK
+
+Note: Full Flask startup test must be run on the target machine after requirements.txt is installed.

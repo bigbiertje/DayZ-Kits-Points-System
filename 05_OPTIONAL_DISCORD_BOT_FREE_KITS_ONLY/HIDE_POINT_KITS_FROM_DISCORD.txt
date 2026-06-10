@@ -1,0 +1,23 @@
+EASY FIX APPLIED
+
+The Discord bot now hides every kit where the internal kit Name starts with:
+
+special_
+
+Examples hidden from Discord:
+- special_medical
+- special_food
+- special_ammo
+- special_builder
+- special_blackmarket
+
+These kits can still stay in KitConfig.json so the website points shop and DayZ kit system can deliver them.
+Discord /kit and /kitstatus will only show/use normal free kits.
+
+To install:
+1. Upload/replace 02_DISCORD_BOT/dayz_kit_discord_website.py
+2. Restart the Discord bot
+3. Wait a moment for slash command autocomplete to refresh
+
+Optional future setting:
+You can also add "ShowInDiscord": false to any kit in KitConfig.json to hide it from Discord.

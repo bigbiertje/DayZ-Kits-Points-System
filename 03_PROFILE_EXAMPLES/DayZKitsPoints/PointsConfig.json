@@ -1,0 +1,6 @@
+{
+    "Enabled": true,
+    "ServerKey": "server1",
+    "PointsPerZombieKill": 1,
+    "LogZombieKills": true
+}

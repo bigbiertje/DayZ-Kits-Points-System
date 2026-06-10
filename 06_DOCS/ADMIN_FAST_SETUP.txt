@@ -1,0 +1,12 @@
+ADMIN FAST SETUP
+
+1. Run the Python website.
+2. Login as admin.
+3. Change secrets/passwords.
+4. Pack DayZ_KitsPoints.pbo.
+5. Copy profile folder.
+6. Configure worker paths.
+7. Start both workers.
+8. Test by manually adding points to a player.
+9. Buy a kit from the Points Shop.
+10. Check DiscordQueue.json.

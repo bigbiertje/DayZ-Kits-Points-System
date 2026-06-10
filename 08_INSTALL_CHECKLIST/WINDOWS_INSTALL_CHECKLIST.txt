@@ -1,0 +1,17 @@
+WINDOWS INSTALL CHECKLIST
+
+[ ] Install Python 3.10+
+[ ] Run 01_PYTHON_WEBSITE/run_windows.bat
+[ ] Open http://localhost:8080
+[ ] Login admin/change password
+[ ] Generate API secret
+[ ] Put same API secret in website + workers
+[ ] Pack DayZ_KitsPoints.pbo
+[ ] Install @DayZKitsPoints on server
+[ ] Copy profile folder to profiles/DayZKitsPoints
+[ ] Edit PointsConfig.json ServerKey
+[ ] Edit worker JSON paths
+[ ] Start points worker
+[ ] Start special kits worker
+[ ] Test points
+[ ] Test buying kit

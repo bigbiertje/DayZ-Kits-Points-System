@@ -1,0 +1,43 @@
+# DayZ Kits & Points API Examples
+
+Replace CHANGE_THIS_API_SECRET with your real API secret.
+
+## Health, no secret needed
+
+curl http://127.0.0.1:8080/api/health
+
+## Read kits
+
+curl -X POST http://127.0.0.1:8080/api/v1/kits ^
+  -H "Content-Type: application/json" ^
+  -d "{\"api_secret\":\"CHANGE_THIS_API_SECRET\",\"server_key\":\"server1\"}"
+
+## Read player points
+
+curl -X POST http://127.0.0.1:8080/api/v1/points/76561190000000000 ^
+  -H "Content-Type: application/json" ^
+  -d "{\"api_secret\":\"CHANGE_THIS_API_SECRET\"}"
+
+## Add points
+
+curl -X POST http://127.0.0.1:8080/api/v1/points/add ^
+  -H "Content-Type: application/json" ^
+  -d "{\"api_secret\":\"CHANGE_THIS_API_SECRET\",\"steam64\":\"76561190000000000\",\"points\":10,\"reason\":\"test\",\"reference\":\"server1\"}"
+
+## Create kit order and charge points
+
+curl -X POST http://127.0.0.1:8080/api/v1/orders/create ^
+  -H "Content-Type: application/json" ^
+  -d "{\"api_secret\":\"CHANGE_THIS_API_SECRET\",\"steam64\":\"76561190000000000\",\"kit_name\":\"special_blackmarket\",\"server_key\":\"server1\",\"charge_points\":true}"
+
+## Read pending orders
+
+curl -X POST http://127.0.0.1:8080/api/v1/orders/pending ^
+  -H "Content-Type: application/json" ^
+  -d "{\"api_secret\":\"CHANGE_THIS_API_SECRET\",\"server_key\":\"server1\"}"
+
+## Mark delivered
+
+curl -X POST http://127.0.0.1:8080/api/v1/orders/mark-delivered ^
+  -H "Content-Type: application/json" ^
+  -d "{\"api_secret\":\"CHANGE_THIS_API_SECRET\",\"order_id\":1,\"message\":\"written to queue\"}"

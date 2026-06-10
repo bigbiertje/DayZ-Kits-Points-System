@@ -1,0 +1,85 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h1>Admin Panel</h1>
+  <p class="muted">Manage players, points, special kits, and orders.</p>
+</div>
+
+<div class="card">
+  <h2>Add / Remove Points</h2>
+  <form method="post" action="{{ url_for('admin_add_points') }}">
+    <label>User</label>
+    <select name="user_id">
+      {% for u in users %}
+        <option value="{{ u['id'] }}">{{ u['username'] }} | {{ u['steam64'] }} | {{ u['points'] }} points</option>
+      {% endfor %}
+    </select>
+    <label>Amount, use negative to remove</label>
+    <input name="amount" type="number" value="100">
+    <label>Reason</label>
+    <input name="reason" value="admin_adjustment">
+    <button>Apply</button>
+  </form>
+</div>
+
+<div class="card">
+  <h2>Add Point Kit</h2>
+  <form method="post" action="{{ url_for('admin_add_kit') }}">
+    <label>Internal kit name, must match DayZ KitConfig.json</label>
+    <input name="kit_name" placeholder="special_blackmarket" required>
+    <label>Display name</label>
+    <input name="display_name" placeholder="Black Market Kit" required>
+    <label>Description</label>
+    <textarea name="description"></textarea>
+    <label>Cost</label>
+    <input type="number" name="cost" value="1000" required>
+    <label>Server key</label>
+    <input name="server_key" value="server1" required>
+    <label><input type="checkbox" name="enabled" checked> Enabled</label>
+    <button>Add kit</button>
+  </form>
+</div>
+
+<div class="card">
+  <h2>Kits</h2>
+  <table>
+    <tr><th>Name</th><th>Display</th><th>Cost</th><th>Server</th><th>Enabled</th><th>Action</th></tr>
+    {% for k in kits %}
+    <tr>
+      <td>{{ k['kit_name'] }}</td>
+      <td>{{ k['display_name'] }}</td>
+      <td>{{ k['cost'] }}</td>
+      <td>{{ k['server_key'] }}</td>
+      <td>{{ k['enabled'] }}</td>
+      <td>
+        <form method="post" action="{{ url_for('admin_toggle_kit', kit_id=k['id']) }}">
+          <button>Toggle</button>
+        </form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+<div class="card">
+  <h2>Latest Orders</h2>
+  <table>
+    <tr><th>ID</th><th>Steam64</th><th>Kit</th><th>Server</th><th>Status</th><th>Date</th><th>Actions</th></tr>
+    {% for o in orders %}
+    <tr>
+      <td>{{ o['id'] }}</td>
+      <td>{{ o['steam64'] }}</td>
+      <td>{{ o['display_name'] }}</td>
+      <td>{{ o['server_key'] }}</td>
+      <td>{{ o['status'] }}</td>
+      <td>{{ o['created_at'] }}</td>
+      <td>
+        <form style="display:inline" method="post" action="{{ url_for('admin_order_status', order_id=o['id'], status='delivered') }}"><button>Delivered</button></form>
+        <form style="display:inline" method="post" action="{{ url_for('admin_order_status', order_id=o['id'], status='cancelled') }}"><button class="danger">Cancel</button></form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

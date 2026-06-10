@@ -1,0 +1,13 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h1>DayZ Kits & Points</h1>
+  <p>This is a generic public web panel for DayZ server owners. Players can register, see points, buy point kits, and the worker can deliver those kits to the game queue.</p>
+  <p class="muted">Server owners can change all branding, colors, kit names, costs, and server keys.</p>
+  {% if not current_user %}
+    <a class="btn" href="{{ url_for('register') }}">Create account</a>
+    <a class="btn" href="{{ url_for('login') }}">Login</a>
+  {% endif %}
+</div>
+{% endblock %}

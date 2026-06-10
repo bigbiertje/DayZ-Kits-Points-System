@@ -1,0 +1,12 @@
+{
+    "discord_bot_token": "CHANGE_THIS_DISCORD_BOT_TOKEN",
+    "guild_id": 0,
+    "website_connect_url": "https://example.com/user/discord",
+    "website_api_url": "https://example.com/api/discord_kit_link.php",
+    "website_api_secret": "CHANGE_THIS_API_SECRET",
+    "servers": {
+        "server1": "C:/Path/To/Your/Server1/profiles/DayZKitsPoints",
+        "server2": "C:/Path/To/Your/Server2/profiles/DayZKitsPoints",
+        "server3": "C:/Path/To/Your/Server3/profiles/DayZKitsPoints"
+    }
+}

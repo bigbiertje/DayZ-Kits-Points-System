@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h1>Account Links</h1>
+  <p>Link Steam for in-game delivery. Link Discord so the Discord bot can read your points and let you buy point kits.</p>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>Steam</h2>
+    <p><b>Status:</b> {% if current_user['steam64'] %}Linked{% else %}Not linked{% endif %}</p>
+    <p><b>Steam64:</b> {{ current_user['steam64'] or "None" }}</p>
+    <a class="btn" href="{{ url_for('auth_steam') }}">Link / Login with Steam</a>
+  </div>
+
+  <div class="card">
+    <h2>Discord</h2>
+    <p><b>Status:</b> {% if current_user['discord_id'] %}Linked{% else %}Not linked{% endif %}</p>
+    <p><b>Discord:</b> {{ current_user['discord_global_name'] or current_user['discord_username'] or "None" }}</p>
+    <p><b>Discord ID:</b> {{ current_user['discord_id'] or "None" }}</p>
+    <a class="btn" href="{{ url_for('auth_discord') }}">Link / Login with Discord</a>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Why link both?</h2>
+  <p>Steam tells the server which player gets the kit. Discord tells the bot which website account belongs to the Discord user.</p>
+</div>
+{% endblock %}

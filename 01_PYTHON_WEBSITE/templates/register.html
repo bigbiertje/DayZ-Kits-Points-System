@@ -1,0 +1,19 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h1>Register</h1>
+  <form method="post">
+    <label>Username</label>
+    <input name="username" required>
+    <label>Email optional</label>
+    <input name="email">
+    <label>Steam64 ID optional, or link Steam after login</label>
+    <input name="steam64" placeholder="7656119...">
+    <label>Password</label>
+    <input type="password" name="password" required>
+    <button>Create account</button>
+    <p class="muted">You can also use Steam or Discord login from the login page.</p>
+  </form>
+</div>
+{% endblock %}

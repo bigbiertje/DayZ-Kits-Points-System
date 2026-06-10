@@ -1,0 +1,22 @@
+PACK THIS FOLDER ONLY
+=====================
+
+In Addon Builder / PBO Manager, select this folder as the source:
+
+DayZ_KitsPoints
+
+The output file must be:
+
+DayZ_KitsPoints.pbo
+
+Put it here on the server:
+
+@DayZKitsPoints/Addons/DayZ_KitsPoints.pbo
+
+Do NOT pack the parent folder @DayZKitsPoints.
+Do NOT pack the whole ZIP.
+Do NOT forget to include *.c files in Addon Builder.
+
+If the mod loads correctly, your script log should show:
+
+[DayZKitsPoints] Loaded.

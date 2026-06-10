@@ -1,0 +1,403 @@
+{
+    "CommandPrefix": "/kit",
+    "ShowKitListWhenUsingKitOnly": true,
+    "SpawnOverflowOnGround": true,
+    "LogClaimsToServerRPT": true,
+    "ChatTag": "[Kits]",
+    "DiscordBridgeEnabled": true,
+    "DiscordPollSeconds": 10,
+    "DiscordSendInGameMessage": true,
+    "DiscordResponseHistoryLimit": 250,
+    "AdminSteamIds": [],
+    "Kits": [
+        {
+            "Name": "medical",
+            "DisplayName": "Medical Kit",
+            "CooldownSeconds": 28800,
+            "Enabled": true,
+            "Items": [
+                {
+                    "ClassName": "BandageDressing",
+                    "Quantity": 2,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Morphine",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "TetracyclineAntibiotics",
+                    "Quantity": 12,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "CharcoalTablets",
+                    "Quantity": 12,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "SalineBagIV",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "BloodTestKit",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                }
+            ]
+        },
+        {
+            "Name": "food",
+            "DisplayName": "Food Kit",
+            "CooldownSeconds": 43200,
+            "Enabled": true,
+            "Items": [
+                {
+                    "ClassName": "BakedBeansCan",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "TunaCan",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "SardinesCan",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "SodaCan_Cola",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Canteen",
+                    "Quantity": 100,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "KitchenKnife",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                }
+            ]
+        },
+        {
+            "Name": "weapon",
+            "DisplayName": "Weapon Kit",
+            "CooldownSeconds": 86400,
+            "Enabled": true,
+            "Items": [
+                {
+                    "ClassName": "AK74",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": [
+                        {
+                            "ClassName": "Mag_AK74_30Rnd",
+                            "Quantity": -1,
+                            "AmmoCount": 30,
+                            "Health01": -1.0,
+                            "ItemAttachments": []
+                        }
+                    ]
+                },
+                {
+                    "ClassName": "Ammo_545x39",
+                    "Quantity": 40,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "CombatKnife",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Mag_AK74_30Rnd",
+                    "Quantity": -1,
+                    "AmmoCount": 30,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                }
+            ]
+        },
+        {
+            "Name": "building",
+            "DisplayName": "Building Supply Kit",
+            "CooldownSeconds": 604800,
+            "Enabled": true,
+            "Items": [
+                {
+                    "ClassName": "NailBox",
+                    "Quantity": 2,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "WoodenPlank",
+                    "Quantity": 20,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "MetalWire",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Rope",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Handsaw",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Hatchet",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "CombinationLock",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                }
+            ]
+        },
+        {
+            "Name": "special_medical",
+            "DisplayName": "Special Medical Kit",
+            "CooldownSeconds": 0,
+            "Enabled": true,
+            "Items": [
+                {
+                    "ClassName": "BandageDressing",
+                    "Quantity": 4,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "TetracyclineAntibiotics",
+                    "Quantity": 12,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Morphine",
+                    "Quantity": 2,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "SalineBagIV",
+                    "Quantity": 2,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                }
+            ]
+        },
+        {
+            "Name": "special_food",
+            "DisplayName": "Special Food Kit",
+            "CooldownSeconds": 0,
+            "Enabled": true,
+            "Items": [
+                {
+                    "ClassName": "TacticalBaconCan",
+                    "Quantity": 3,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "WaterBottle",
+                    "Quantity": 100,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "SodaCan_Cola",
+                    "Quantity": 2,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "CanOpener",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                }
+            ]
+        },
+        {
+            "Name": "special_ammo",
+            "DisplayName": "Special Ammo Kit",
+            "CooldownSeconds": 0,
+            "Enabled": true,
+            "Items": [
+                {
+                    "ClassName": "Ammo_556x45",
+                    "Quantity": 80,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Mag_STANAG_30Rnd",
+                    "Quantity": -1,
+                    "AmmoCount": 30,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Mag_STANAG_30Rnd",
+                    "Quantity": -1,
+                    "AmmoCount": 30,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "WeaponCleaningKit",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                }
+            ]
+        },
+        {
+            "Name": "special_builder",
+            "DisplayName": "Special Builder Kit",
+            "CooldownSeconds": 0,
+            "Enabled": true,
+            "Items": [
+                {
+                    "ClassName": "NailBox",
+                    "Quantity": 4,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "MetalWire",
+                    "Quantity": 2,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "CodeLock",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "Hatchet",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                }
+            ]
+        },
+        {
+            "Name": "special_blackmarket",
+            "DisplayName": "Black Market Kit",
+            "CooldownSeconds": 0,
+            "Enabled": true,
+            "Items": [
+                {
+                    "ClassName": "M4A1",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": [
+                        {
+                            "ClassName": "Mag_STANAG_30Rnd",
+                            "Quantity": -1,
+                            "AmmoCount": 30,
+                            "Health01": -1.0,
+                            "ItemAttachments": []
+                        }
+                    ]
+                },
+                {
+                    "ClassName": "Ammo_556x45",
+                    "Quantity": 120,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "PlateCarrierVest",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                },
+                {
+                    "ClassName": "NVGoggles",
+                    "Quantity": 1,
+                    "AmmoCount": -1,
+                    "Health01": -1.0,
+                    "ItemAttachments": []
+                }
+            ]
+        }
+    ]
+}

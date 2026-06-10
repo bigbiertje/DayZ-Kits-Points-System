@@ -1,0 +1,11 @@
+LINUX WEBSITE CHECKLIST
+
+[ ] Install Python 3.10+
+[ ] cd 01_PYTHON_WEBSITE
+[ ] python3 -m pip install -r requirements.txt
+[ ] export DZKP_SECRET_KEY='strong-secret'
+[ ] export DZKP_API_SECRET='strong-api-secret'
+[ ] export DZKP_ADMIN_PASSWORD='strong-admin-password'
+[ ] python3 app.py
+[ ] Reverse proxy with HTTPS for public use
+[ ] Backup data/site.db

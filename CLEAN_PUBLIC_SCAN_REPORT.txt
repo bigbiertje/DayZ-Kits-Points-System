@@ -1,0 +1,2 @@
+Suspicious private string scan results:
+No obvious private strings found.

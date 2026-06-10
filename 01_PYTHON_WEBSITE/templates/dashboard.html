@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="grid">
+  <div class="card">
+    <h1>Your Points</h1>
+    <div class="points-big">{{ account['points'] }}</div>
+    <p class="muted">Earned: {{ account['total_earned'] }} | Spent: {{ account['total_spent'] }}</p>
+    <a class="btn" href="{{ url_for('points') }}">Open points shop</a>
+  </div>
+  <div class="card">
+    <h2>Your Account</h2>
+    <p><b>Username:</b> {{ current_user['username'] }}</p>
+    <p><b>Steam64:</b> {{ current_user['steam64'] or "Not linked" }}</p>
+    <p><b>Discord:</b> {{ current_user['discord_global_name'] or current_user['discord_username'] or "Not linked" }}</p>
+    <a class="btn" href="{{ url_for('account_profile') }}">Edit profile</a>
+    <a class="btn" href="{{ url_for('account_links') }}">Manage links</a>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Recent Orders</h2>
+  <table>
+    <tr><th>Kit</th><th>Server</th><th>Status</th><th>Date</th></tr>
+    {% for o in orders %}
+      <tr><td>{{ o['display_name'] }}</td><td>{{ o['server_key'] }}</td><td>{{ o['status'] }}</td><td>{{ o['created_at'] }}</td></tr>
+    {% endfor %}
+  </table>
+</div>
+
+<div class="card">
+  <h2>Recent Point History</h2>
+  <table>
+    <tr><th>Change</th><th>Reason</th><th>Date</th></tr>
+    {% for h in history %}
+      <tr><td>{{ h['change_amount'] }}</td><td>{{ h['reason'] }}</td><td>{{ h['created_at'] }}</td></tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

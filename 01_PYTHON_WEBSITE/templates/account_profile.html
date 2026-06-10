@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h1>Edit Profile</h1>
+  <p class="muted">Players who log in with Steam or Discord can change their website name here.</p>
+
+  <form method="post">
+    <label>Website username</label>
+    <input name="username" value="{{ current_user['username'] }}" minlength="3" maxlength="32" required>
+    <small>Allowed: letters, numbers, dots, underscores, and dashes.</small>
+
+    <label>Email optional</label>
+    <input name="email" value="{{ current_user['email'] or '' }}">
+
+    <button>Save profile</button>
+  </form>
+</div>
+
+<div class="card">
+  <h2>Linked Accounts</h2>
+  <p><b>Steam64:</b> {{ current_user['steam64'] or "Not linked" }}</p>
+  <p><b>Discord:</b> {{ current_user['discord_global_name'] or current_user['discord_username'] or "Not linked" }}</p>
+  <a class="btn" href="{{ url_for('account_links') }}">Manage Steam / Discord links</a>
+</div>
+{% endblock %}

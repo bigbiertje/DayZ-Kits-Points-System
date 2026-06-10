@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <h1>Points Shop</h1>
+  <p>Your balance: <b>{{ account['points'] }}</b> points</p>
+</div>
+<div class="grid">
+  {% for kit in kits %}
+  <div class="card">
+    <h2>{{ kit['display_name'] }}</h2>
+    <p>{{ kit['description'] }}</p>
+    <p><b>{{ kit['cost'] }} points</b></p>
+    <p class="muted">Server: {{ kit['server_key'] }} | Internal kit: {{ kit['kit_name'] }}</p>
+    <form method="post" action="{{ url_for('buy_kit', kit_id=kit['id']) }}">
+      <button>Buy kit</button>
+    </form>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
