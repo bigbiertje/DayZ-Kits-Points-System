@@ -18,8 +18,6 @@ It includes:
 - Optional Discord bot for free kits only
 - Docs and helper scripts
 
-No old PHP website is included in this package.
-
 ---
 
 ## Folder overview
